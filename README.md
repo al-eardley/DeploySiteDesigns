@@ -1,4 +1,4 @@
-# DeploySiteDesigns
+# Deploy Site Designs
 Site Designs have made the deployment of repeatable customisation of sites much easier, and in my opinion are the starting point for any SharePoint deployment for communication or collaboration.
 
 While the capabilities of Site Designs are well documented and continue to evolve, I see many environments where the deployment of the Site Scripts and Site Designs has been done in a way that allows for multiple versions of the same Site Script and Site Design to exist.
