@@ -1,0 +1,148 @@
+{
+  "$schema": "schema.json",
+  "actions": [
+    {
+      "verb": "removeNavLink",
+      "displayName": "Conversations",
+      "isWebRelative": true
+    },
+    {
+      "verb": "removeNavLink",
+      "displayName": "Pages",
+      "isWebRelative": true
+    },
+    {
+      "verb": "removeNavLink",
+      "displayName": "Site contents",
+      "isWebRelative": true
+    },
+    {
+      "verb": "addPrincipalToSPGroup",
+      "principal": "PMOAdmins",
+      "group": "Owners"
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field DisplayName=\"Date Raised\" FriendlyDisplayFormat=\"Relative\" Format=\"DateOnly\" Group=\"PMO\" Title=\"Date Raised\" Type=\"DateTime\" ID=\"{f5b49eed-852d-4917-a8f0-b4845559c77e}\" Name=\"DateRaised\" StaticName=\"DateRaised\" />",
+      "pushChanges": true
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field AppendOnly=\"FALSE\" DisplayName=\"Description\" Group=\"PMO\" IsolateStyles=\"TRUE\" NumLines=\"6\" RichText=\"TRUE\" RichTextMode=\"FullHtml\" Title=\"Description\" Type=\"Note\" ID=\"{e330b499-84d9-4a29-a16d-079273bc296f}\" StaticName=\"Description\" Name=\"Description\" />",
+      "pushChanges": true
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field DisplayName=\"Issue Status\" FillInChoice=\"FALSE\" Title=\"Issue Status\" Type=\"Choice\" ID=\"{4b2dd10e-f540-48f9-ba8c-28b1c1734af0}\" Name=\"IssueStatus\" StaticName=\"IssueStatus\"><CHOICES><CHOICE>Open</CHOICE><CHOICE>Being mitigated</CHOICE><CHOICE>Closed</CHOICE></CHOICES><Default>Open</Default></Field>",        
+      "pushChanges": true
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field DisplayName=\"Mitigation Plan\" AppendOnly=\"FALSE\" Group=\"PMO\" IsolateStyles=\"TRUE\" NumLines=\"6\" RichText=\"TRUE\" RichTextMode=\"FullHtml\" Title=\"Mitigation Plan\" Type=\"Note\" ID=\"{83521217-6e4c-488e-872a-8566b008ca44}\" Name=\"MitigationPlan\" StaticName=\"MitigationPlan\" />",
+      "pushChanges": true
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field DisplayName=\"Owner\" List=\"UserInfo\" Mult=\"TRUE\" Title=\"Owner\" Type=\"UserMulti\" UserSelectionMode=\"0\" UserSelectionScope=\"0\" ID=\"{c2324737-277a-47c0-bc8e-493d997cc1da}\" StaticName=\"Owner\" Name=\"Owner\" />",
+      "pushChanges": true
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field Type=\"TaxonomyFieldType\" DisplayName=\"Project Name\" ShowField=\"Term1033\" Required=\"FALSE\" EnforceUniqueValues=\"FALSE\" Group=\"PMO\" ID=\"{4e7902b4-570f-4c46-bc44-165c6d6f28fe}\" StaticName=\"ProjectName\" Name=\"ProjectName\" Customization=\"\" AllowDeletion=\"TRUE\"><Default /><Customization><ArrayOfProperty><Property><Name>SspId</Name><Value xmlns:q1=\"http://www.w3.org/2001/XMLSchema\" p4:type=\"q1:string\" xmlns:p4=\"http://www.w3.org/2001/XMLSchema-instance\">##TermStoreId##</Value></Property><Property><Name>GroupId</Name></Property><Property><Name>TermSetId</Name><Value xmlns:q2=\"http://www.w3.org/2001/XMLSchema\" p4:type=\"q2:string\" xmlns:p4=\"http://www.w3.org/2001/XMLSchema-instance\">##TermSetId##</Value></Property><Property><Name>AnchorId</Name><Value xmlns:q3=\"http://www.w3.org/2001/XMLSchema\" p4:type=\"q3:string\" xmlns:p4=\"http://www.w3.org/2001/XMLSchema-instance\">00000000-0000-0000-0000-000000000000</Value></Property><Property><Name>UserCreated</Name><Value xmlns:q4=\"http://www.w3.org/2001/XMLSchema\" p4:type=\"q4:boolean\" xmlns:p4=\"http://www.w3.org/2001/XMLSchema-instance\">false</Value></Property><Property><Name>Open</Name><Value xmlns:q5=\"http://www.w3.org/2001/XMLSchema\" p4:type=\"q5:boolean\" xmlns:p4=\"http://www.w3.org/2001/XMLSchema-instance\">true</Value></Property><Property><Name>IsPathRendered</Name><Value xmlns:q7=\"http://www.w3.org/2001/XMLSchema\" p4:type=\"q7:boolean\" xmlns:p4=\"http://www.w3.org/2001/XMLSchema-instance\">false</Value></Property><Property><Name>IsKeyword</Name><Value xmlns:q8=\"http://www.w3.org/2001/XMLSchema\" p4:type=\"q8:boolean\" xmlns:p4=\"http://www.w3.org/2001/XMLSchema-instance\">false</Value></Property><Property><Name>TargetTemplate</Name></Property><Property><Name>CreateValuesInEditForm</Name><Value xmlns:q9=\"http://www.w3.org/2001/XMLSchema\" p4:type=\"q9:boolean\" xmlns:p4=\"http://www.w3.org/2001/XMLSchema-instance\">false</Value></Property><Property><Name>FilterAssemblyStrongName</Name><Value xmlns:q10=\"http://www.w3.org/2001/XMLSchema\" p4:type=\"q10:string\" xmlns:p4=\"http://www.w3.org/2001/XMLSchema-instance\">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value></Property><Property><Name>FilterClassName</Name><Value xmlns:q11=\"http://www.w3.org/2001/XMLSchema\" p4:type=\"q11:string\" xmlns:p4=\"http://www.w3.org/2001/XMLSchema-instance\">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value></Property><Property><Name>FilterMethodName</Name><Value xmlns:q12=\"http://www.w3.org/2001/XMLSchema\" p4:type=\"q12:string\" xmlns:p4=\"http://www.w3.org/2001/XMLSchema-instance\">GetFilteringHtml</Value></Property><Property><Name>FilterJavascriptProperty</Name><Value xmlns:q13=\"http://www.w3.org/2001/XMLSchema\" p4:type=\"q13:string\" xmlns:p4=\"http://www.w3.org/2001/XMLSchema-instance\">FilteringJavascript</Value></Property></ArrayOfProperty></Customization></Field>",
+      "pushChanges": true
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field DisplayName=\"Risk Probability\" Group=\"PMO\" FillInChoice=\"FALSE\" Required=\"TRUE\" Title=\"Probability\" Type=\"Choice\" ID=\"{0adf46b8-c8a2-41ae-980a-daf649c1f08f}\" Name=\"RiskProbability\" StaticName=\"RiskProbability\"><CHOICES><CHOICE>High</CHOICE><CHOICE>Medium</CHOICE><CHOICE>Low</CHOICE></CHOICES><Default>Medium</Default></Field>",
+      "pushChanges": true
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field DisplayName=\"Risk Impact\" Group=\"PMO\" FillInChoice=\"FALSE\" Required=\"TRUE\" Title=\"Impact\" Type=\"Choice\" ID=\"{139ae809-2a7d-4e03-8089-208276818832}\" Name=\"RiskImpact\" StaticName=\"RiskImpact\"><CHOICES><CHOICE>High</CHOICE><CHOICE>Medium</CHOICE><CHOICE>Low</CHOICE></CHOICES><Default>Medium</Default></Field>",
+      "pushChanges": true
+    },
+    {
+      "verb": "createSiteColumnXml",
+      "schemaXml": "<Field DisplayName=\"Risk Status\" Group=\"PMO\" FillInChoice=\"FALSE\" Title=\"Status\" Type=\"Choice\" ID=\"{57b3c473-84a7-4249-8a67-1d1c13987146}\" Name=\"RiskStatus\" StaticName=\"RiskStatus\"><CHOICES><CHOICE>Open</CHOICE><CHOICE>Promoted to Issue</CHOICE><CHOICE>Closed</CHOICE></CHOICES><Default>Open</Default></Field>",     
+      "pushChanges": true
+    },
+    {
+      "verb": "createContentType",
+      "name": "PMO Risk",
+      "description": "PMO Risk",
+      "parentName": "Item",
+      "hidden": false,
+      "id": "0x01003560CBBC612BED40829014301825C755",
+      "subactions": [
+        {
+          "verb": "addSiteColumn",
+          "internalName": "ProjectName"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "Description"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "Owner"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "DateRaised"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "MitigationPlan"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "RiskStatus"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "RiskProbability"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "RiskImpact"
+        }
+      ]
+    },
+    {
+      "verb": "createContentType",
+      "name": "PMO Issue",
+      "description": "PMO Issue",
+      "parentName": "Item",
+      "hidden": false,
+      "id": "0x0100E73CBDA76AAF9D4896A73D435E1F3157",
+      "subactions": [
+        {
+          "verb": "addSiteColumn",
+          "internalName": "ProjectName"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "Description"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "Owner"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "DateRaised"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "MitigationPlan"
+        },
+        {
+          "verb": "addSiteColumn",
+          "internalName": "IssueStatus"
+        }
+      ]
+    }
+  ],
+  "bindata": {},
+  "version": 1
+}

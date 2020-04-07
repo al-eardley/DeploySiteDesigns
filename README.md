@@ -12,3 +12,5 @@ As a starting point the solution consists of the following components:
 - A connection script
 - A CSV file to define the Site Scripts for a Site Design
 - A script to create the Site Scripts from the CSV and create a Site Designs
+
+This library includes the ability to provide the name of a hub site to join to and the name of term sets that can be used in columns.  The intention with this library is to minimise the need to update Site Script JSON for different environments.

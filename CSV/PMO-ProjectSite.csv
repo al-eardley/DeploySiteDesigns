@@ -1,0 +1,6 @@
+Title,Description,File,IncludeHubJoin,HubSitePath,IncludeTermSet,TermGroupName,TermSetName,IncludeFlow,FlowName
+Join PMO Hub Site,Joins the site to the PMO Site Hub,Common_JoinHubSite.json,Yes,/sites/PMOHub,No,,,,
+Set UK regional settings,"Sets locale, sort order and 24 hour format - error setting timezone so that is not set",Common_RegionalSettings.json,No,,No,,,,
+Configure Project Site,"Configures the project site (site columns, content types and navigation)",Project_ConfigureSite.json,No,,Yes,PMO,Project,,
+Create Risks List,Creates a Risks list,Project_Risk.json,No,,No,,,,
+Create Issues List,Creates an Issues list,Project_Issue.json,No,,No,,,,
